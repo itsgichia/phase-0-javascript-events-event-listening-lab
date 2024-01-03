@@ -1,10 +1,12 @@
+require ( './helpers.js' );
+
 const sinon = require('sinon');
 
 describe("index.js", () => {
   let input;
 
   beforeEach(function() {
-    input = document.getElementById('input');
+    input = document.getElementById('button');
     sinon.spy(input, 'addEventListener');
   })
 
